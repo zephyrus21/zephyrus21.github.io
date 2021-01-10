@@ -10,7 +10,7 @@ html {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #252525;
+    background-color: #131313;
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ html {
     width: 64px;
     height: 128px;
     border: 1px solid #dfdfdf;
-    background-color: #252525;
+    background-color: #131313;
 }
 
 @media (max-width: 550px) {
