@@ -1,0 +1,32 @@
+body,
+html {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+}
+
+.stagger-visualizer {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+
+.stagger-visualizer div {
+    /*position: absolute;*/
+    width: 64px;
+    height: 128px;
+    border: 1px solid #dfdfdf;
+    background-color: #252525;
+}
+
+h1 {
+    z-index: 10;
+}
