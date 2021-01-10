@@ -31,7 +31,6 @@ html {
 
 @media screen and (max-width: 550px) {
     .stagger-visualizer {
-        width: 150px;
-        height: 150px;
+        display: none;
     }
 }
