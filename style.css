@@ -29,13 +29,13 @@ html {
     background-color: #252525;
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
     .stagger-visualizer {
         width: 150px;
         height: 150px;
     }
     .stagger-visualizer div {
-        width: 64px;
-        height: 128px;
+        width: 32px;
+        height: 64px;
     }
 }
