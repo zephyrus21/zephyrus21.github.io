@@ -28,3 +28,10 @@ html {
     border: 1px solid #dfdfdf;
     background-color: #252525;
 }
+
+@media screen and (max-width: 550px) {
+    .stagger-visualizer {
+        width: 150px;
+        height: 150px;
+    }
+}
