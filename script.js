@@ -75,7 +75,6 @@ const staggersAnimation = anime
       from: 'center',
       direction: 'reverse',
     }),
-    rotate: anime.stagger(360, { from: 'center', grid: [9, 9] }),
     rotate: 0,
     delay: anime.stagger(50, { from: 'center', grid: [9, 9] }),
   })

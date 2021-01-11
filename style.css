@@ -1,5 +1,6 @@
 :root::-webkit-scrollbar {
     display: none;
+    overflow-x: hidden;
 }
 
 body,
@@ -11,7 +12,6 @@ html {
     width: 100%;
     height: 100vh;
     background-color: #131313;
-    overflow-x: hidden;
 }
 
 .stagger-visualizer {
