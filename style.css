@@ -1,22 +1,44 @@
 body {
   width: 100wh;
-  height: 90vh;
-  color: #fff;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 600%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  height: 100vh;
 }
 
-::-webkit-scrollbar {
+.background {
+  color: #fff;
+  background-size: 400% 600%;
+  -webkit-animation: Gradient 05s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+}
+
+.gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 600%;
+}
+
+.gradient::-webkit-scrollbar {
   width: 6px;
   background: linear-gradient(-45deg, #ee7752, #e73c7e);
 }
 
-::-webkit-scrollbar-thumb {
+.gradient::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+}
+
+.dark {
+  background: linear-gradient(-45deg, #1d1d1d, #333333, #4b4b4b, #5a5a5a);
+  background-size: 400% 600%;
+}
+
+.dark::-webkit-scrollbar {
+  width: 6px;
+  background: linear-gradient(-45deg, #131313, #302e2e);
+}
+
+.dark::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #cacaca, #f3f2f3);
 }
 
 @-webkit-keyframes Gradient {
@@ -76,4 +98,66 @@ body {
   padding-bottom: 10px !important;
   font-weight: 600 !important;
   white-space: normal !important;
+}
+
+.footer {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 0 30px;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #535353;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: '';
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90deg, #e73c7e, #23a6d5);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
