@@ -9,6 +9,16 @@ body {
   animation: Gradient 15s ease infinite;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+}
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
