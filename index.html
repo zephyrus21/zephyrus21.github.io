@@ -24,12 +24,12 @@
     <div class="container">
       <!-- Togle switch -->
 
-      <!-- <div class="theme-switch-wrapper">
+      <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
           <div class="slider round"></div>
         </label>
-      </div> -->
+      </div>
       <div class="col-xs-12">
         <div
           class="text-center"
@@ -240,7 +240,17 @@
       const toggleSwitch = document.querySelector(
         '.theme-switch input[type="checkbox"]'
       );
-      console.log(toggleSwitch);
+      const background = document.querySelector('.background');
+
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+          background.classList.toggle('dark');
+          background.classList.toggle('gradient');
+        } else {
+          background.classList.toggle('gradient');
+          background.classList.toggle('dark');
+        }
+      });
     </script>
   </body>
 </html>
