@@ -86,7 +86,7 @@ body {
 .profile {
   width: 120px;
   height: 120px;
-  background-image: url('./Assets/me.jpg');
+  background-image: url("./Assets/me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -110,7 +110,7 @@ body {
 
 .theme-switch-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
@@ -140,7 +140,7 @@ body {
 .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: '';
+  content: "";
   height: 26px;
   left: 4px;
   position: absolute;
